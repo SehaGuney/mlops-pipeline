@@ -23,7 +23,7 @@ with DAG(
     trigger = SimpleHttpOperator(
         task_id='trigger_ci',
         http_conn_id='jenkins_api',
-        endpoint='job/mlops-ci/build',     # Senin job adın neyse onu yaz
+        endpoint='job/mlops-ci/build',   
         method='POST',
         headers={"Content-Type": "application/json"},
         response_check=lambda response: response.status_code == 201,
