@@ -1,0 +1,12 @@
+# Gizli bilgiler
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Airflow
+airflow/logs/
+
+# macOS
+.DS_Store
